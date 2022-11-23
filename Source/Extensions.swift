@@ -22,7 +22,7 @@ extension UICollectionView {
         return visibleCells.compactMap({ $0 as? SwipeCollectionViewCell })
     }
     
-    func hideSwipeCell() {
+    @objc public func hideSwipeCell() {
         swipeCells.forEach { $0.hideSwipe(animated: true) }
     }
     
